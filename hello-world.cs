@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace Nandun.Functions
 {
-    public static class hello_world
+    public static class HelloWorldHttpFunction
     {
-        [FunctionName("hello_world")]
+        [FunctionName("hello-world")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
